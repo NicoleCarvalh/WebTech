@@ -1,9 +1,14 @@
 const name = document.querySelector("#name");
 const button = document.querySelector("button");
-const list = document.querySelector(".lista")
+const list = document.querySelector(".list")
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
+  let inputValue = name.value;
+  const templateHTML = `<li>${inputValue}</li>`;
 
-  console.log(name.value)
+  name.value = '';
+
+  list.innerHTML += templateHTML;
+  
 })
