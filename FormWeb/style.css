@@ -1,5 +1,6 @@
 body {
-  background: gray;
+  text-align: center;
+  background-color: gray;
 }
 
 .container {
@@ -7,6 +8,7 @@ body {
   max-width: 1000px;
   border: 1px solid;
   margin: 0 auto;
+  background-color: white;
 }
 
 header {
@@ -18,4 +20,46 @@ header h1 {
   font-size: 35px;
   color: white;
   padding: 25px;
+}
+
+.content {
+  max-width: 400px;
+  border: 1px solid red;
+  margin: 20px auto 20px auto;
+}
+
+.header-cad {
+  background-color: palevioletred;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  padding: 16px;
+}
+
+form,
+.form-group {
+  padding: 16px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 18px;
+  color: purple;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form-group input[type="text"]{
+  border: 2px solid plum;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 16px;
+}
+
+.form-button button {
+  border: 0;
+  color: white;
+  background-color: blueviolet;
+  padding: 16px;
+
 }
