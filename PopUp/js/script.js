@@ -1,21 +1,27 @@
 const btn = document.querySelector("#btn-popup");
 const popup = document.querySelector(".popup-wrapper");
+const page = document.querySelector(".page");
 
-btn.addEventListener("click", event => {
+
+
+btn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  popup.classList.add("d-block");
-  // popup.classList.toggle("d-block");
+  page.classList.toggle("disabled");
+  popup.classList.toggle("d-block");
+
+  // popup.classList.add("d-block");
 
   popup.addEventListener("click", (event) => {
-    // pega a classe do elemento que clicar
     const classOfClickElement = event.target.classList[0];
 
-    const classNameListArray = ["popup-close", "popup-link", "popup-wrapper"]
+    const classArray = ["popup-close", "popup-link", "popup-wrapper"];
 
-    if(classNameListArray.includes(classOfClickElement)){
-      popup.classList.remove("d-block");
+    for (let i = 0; i < classArray.length; i++) {
+      if (classOfClickElement == classArray[i]) {
+        popup.classList.remove("d-block");
+        page.classList.toggle("disabled");
+      }
     }
-
-  })
-})
+  });
+});
