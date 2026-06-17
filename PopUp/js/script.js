@@ -10,7 +10,6 @@ btn.addEventListener("click", (event) => {
   page.classList.toggle("disabled");
   popup.classList.toggle("d-block");
 
-  // popup.classList.add("d-block");
 
   popup.addEventListener("click", (event) => {
     const classOfClickElement = event.target.classList[0];
@@ -20,7 +19,7 @@ btn.addEventListener("click", (event) => {
     for (let i = 0; i < classArray.length; i++) {
       if (classOfClickElement == classArray[i]) {
         popup.classList.remove("d-block");
-        page.classList.toggle("disabled");
+        page.classList.remove("disabled");
       }
     }
   });
