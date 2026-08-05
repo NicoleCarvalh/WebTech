@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main.banner {
+  background-image: url(./b4-white-chicks.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+
+  h1 {
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    z-index: 999;
+  }
+
+  p {
+    font-size: 2rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: 0 auto 0 auto;
+  }
+
+  button {
+    padding: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
